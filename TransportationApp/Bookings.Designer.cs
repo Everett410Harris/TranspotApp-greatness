@@ -447,9 +447,9 @@
             this.label21.ForeColor = System.Drawing.Color.DodgerBlue;
             this.label21.Location = new System.Drawing.Point(247, 160);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(75, 24);
+            this.label21.Size = new System.Drawing.Size(77, 24);
             this.label21.TabIndex = 15;
-            this.label21.Text = "Amount";
+            this.label21.Text = "Mileage";
             // 
             // textBox4
             // 
@@ -488,7 +488,7 @@
             this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.RoyalBlue;
             this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.RoyalBlue;
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(492, 187);
+            this.dateTimePicker1.Location = new System.Drawing.Point(787, 193);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(110, 23);
             this.dateTimePicker1.TabIndex = 19;
