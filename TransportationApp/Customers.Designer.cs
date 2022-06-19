@@ -34,13 +34,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -90,13 +84,7 @@
             this.panel3.Controls.Add(this.button3);
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.dateTimePicker2);
-            this.panel3.Controls.Add(this.dateTimePicker1);
-            this.panel3.Controls.Add(this.comboBox2);
-            this.panel3.Controls.Add(this.comboBox1);
             this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.label13);
-            this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.textBox3);
             this.panel3.Controls.Add(this.label9);
@@ -160,103 +148,32 @@
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker2.CalendarForeColor = System.Drawing.Color.RoyalBlue;
-            this.dateTimePicker2.CalendarTitleForeColor = System.Drawing.Color.RoyalBlue;
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(332, 187);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(156, 23);
-            this.dateTimePicker2.TabIndex = 5;
-            this.dateTimePicker2.Value = new System.DateTime(2022, 6, 19, 0, 0, 0, 0);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.RoyalBlue;
-            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.RoyalBlue;
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(96, 187);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(191, 23);
-            this.dateTimePicker1.TabIndex = 5;
-            this.dateTimePicker1.Value = new System.DateTime(2022, 6, 19, 0, 0, 0, 0);
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox2.ForeColor = System.Drawing.Color.OrangeRed;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Female",
-            "Male"});
-            this.comboBox2.Location = new System.Drawing.Point(522, 181);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(178, 29);
-            this.comboBox2.TabIndex = 4;
-            this.comboBox2.Text = "Gender";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.ForeColor = System.Drawing.Color.OrangeRed;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(332, 110);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(156, 29);
-            this.comboBox1.TabIndex = 4;
-            this.comboBox1.Text = "Driver Name";
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label11.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label11.Location = new System.Drawing.Point(726, 83);
+            this.label11.Location = new System.Drawing.Point(537, 83);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(132, 24);
+            this.label11.Size = new System.Drawing.Size(163, 24);
             this.label11.TabIndex = 3;
-            this.label11.Text = "Driver Address";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label13.Location = new System.Drawing.Point(332, 160);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(86, 24);
-            this.label13.TabIndex = 3;
-            this.label13.Text = "Join Date";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label12.Location = new System.Drawing.Point(96, 160);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(101, 24);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "Driver DOB";
+            this.label11.Text = "Customer Address";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label10.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label10.Location = new System.Drawing.Point(522, 83);
+            this.label10.Location = new System.Drawing.Point(311, 86);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(116, 24);
+            this.label10.Size = new System.Drawing.Size(147, 24);
             this.label10.TabIndex = 3;
-            this.label10.Text = "Driver Phone";
+            this.label10.Text = "Customer Phone";
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(726, 110);
+            this.textBox3.Location = new System.Drawing.Point(537, 110);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(178, 100);
@@ -269,14 +186,14 @@
             this.label9.ForeColor = System.Drawing.Color.OrangeRed;
             this.label9.Location = new System.Drawing.Point(96, 83);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(113, 24);
+            this.label9.Size = new System.Drawing.Size(144, 24);
             this.label9.TabIndex = 3;
-            this.label9.Text = "Driver Name";
+            this.label9.Text = "Customer Name";
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(522, 110);
+            this.textBox2.Location = new System.Drawing.Point(311, 113);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(178, 29);
             this.textBox2.TabIndex = 2;
@@ -296,9 +213,9 @@
             this.label7.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.label7.Location = new System.Drawing.Point(376, 18);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(203, 27);
+            this.label7.Size = new System.Drawing.Size(239, 27);
             this.label7.TabIndex = 1;
-            this.label7.Text = "Manage Drivers";
+            this.label7.Text = "Manage Customers";
             // 
             // pictureBox11
             // 
@@ -372,9 +289,9 @@
             this.label14.ForeColor = System.Drawing.Color.Magenta;
             this.label14.Location = new System.Drawing.Point(1240, 297);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(108, 37);
+            this.label14.Size = new System.Drawing.Size(138, 37);
             this.label14.TabIndex = 16;
-            this.label14.Text = "Travels";
+            this.label14.Text = "Bookings";
             // 
             // pictureBox9
             // 
@@ -421,7 +338,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label2.ForeColor = System.Drawing.Color.DimGray;
             this.label2.Location = new System.Drawing.Point(18, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 24);
@@ -505,7 +422,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.DimGray;
+            this.label3.ForeColor = System.Drawing.Color.DodgerBlue;
             this.label3.Location = new System.Drawing.Point(33, 282);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 24);
@@ -587,13 +504,7 @@
         private Button button3;
         private Button button2;
         private Button button1;
-        private DateTimePicker dateTimePicker2;
-        private DateTimePicker dateTimePicker1;
-        private ComboBox comboBox2;
-        private ComboBox comboBox1;
         private Label label11;
-        private Label label13;
-        private Label label12;
         private Label label10;
         private TextBox textBox3;
         private Label label9;
