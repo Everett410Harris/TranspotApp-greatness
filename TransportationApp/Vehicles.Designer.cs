@@ -30,18 +30,26 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vehicles));
             this.panel3 = new System.Windows.Forms.Panel();
+            this.BookedCb = new System.Windows.Forms.ComboBox();
+            this.MileageTb = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.ColorTb = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.EngTypeCb = new System.Windows.Forms.ComboBox();
+            this.VYearCb = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.EditBtn = new System.Windows.Forms.Button();
+            this.SaveBtn = new System.Windows.Forms.Button();
+            this.TypeCb = new System.Windows.Forms.ComboBox();
+            this.MakeCb = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ModelTb = new System.Windows.Forms.TextBox();
+            this.LPlateTb = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -65,14 +73,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -90,31 +90,132 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.comboBox5);
-            this.panel3.Controls.Add(this.textBox4);
+            this.panel3.Controls.Add(this.BookedCb);
+            this.panel3.Controls.Add(this.MileageTb);
             this.panel3.Controls.Add(this.label21);
-            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.ColorTb);
             this.panel3.Controls.Add(this.label20);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.comboBox4);
-            this.panel3.Controls.Add(this.comboBox3);
+            this.panel3.Controls.Add(this.EngTypeCb);
+            this.panel3.Controls.Add(this.VYearCb);
             this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.comboBox2);
-            this.panel3.Controls.Add(this.comboBox1);
+            this.panel3.Controls.Add(this.EditBtn);
+            this.panel3.Controls.Add(this.SaveBtn);
+            this.panel3.Controls.Add(this.TypeCb);
+            this.panel3.Controls.Add(this.MakeCb);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.ModelTb);
+            this.panel3.Controls.Add(this.LPlateTb);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Location = new System.Drawing.Point(162, 12);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(988, 939);
             this.panel3.TabIndex = 1;
+            // 
+            // BookedCb
+            // 
+            this.BookedCb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BookedCb.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.BookedCb.FormattingEnabled = true;
+            this.BookedCb.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.BookedCb.Location = new System.Drawing.Point(96, 185);
+            this.BookedCb.Name = "BookedCb";
+            this.BookedCb.Size = new System.Drawing.Size(178, 29);
+            this.BookedCb.TabIndex = 17;
+            this.BookedCb.Text = "Type";
+            // 
+            // MileageTb
+            // 
+            this.MileageTb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MileageTb.Location = new System.Drawing.Point(522, 185);
+            this.MileageTb.Name = "MileageTb";
+            this.MileageTb.Size = new System.Drawing.Size(163, 29);
+            this.MileageTb.TabIndex = 16;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label21.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label21.Location = new System.Drawing.Point(531, 160);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(77, 24);
+            this.label21.TabIndex = 15;
+            this.label21.Text = "Mileage";
+            // 
+            // ColorTb
+            // 
+            this.ColorTb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ColorTb.Location = new System.Drawing.Point(756, 185);
+            this.ColorTb.Name = "ColorTb";
+            this.ColorTb.Size = new System.Drawing.Size(157, 29);
+            this.ColorTb.TabIndex = 14;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label20.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label20.Location = new System.Drawing.Point(756, 160);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(54, 24);
+            this.label20.TabIndex = 13;
+            this.label20.Text = "Color";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label1.Location = new System.Drawing.Point(854, 83);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 24);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Engine Type";
+            // 
+            // EngTypeCb
+            // 
+            this.EngTypeCb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.EngTypeCb.ForeColor = System.Drawing.Color.Black;
+            this.EngTypeCb.FormattingEnabled = true;
+            this.EngTypeCb.Items.AddRange(new object[] {
+            "Diesel",
+            "Gasoline",
+            "Electric"});
+            this.EngTypeCb.Location = new System.Drawing.Point(854, 110);
+            this.EngTypeCb.Name = "EngTypeCb";
+            this.EngTypeCb.Size = new System.Drawing.Size(117, 29);
+            this.EngTypeCb.TabIndex = 11;
+            // 
+            // VYearCb
+            // 
+            this.VYearCb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.VYearCb.ForeColor = System.Drawing.Color.Black;
+            this.VYearCb.FormattingEnabled = true;
+            this.VYearCb.Items.AddRange(new object[] {
+            "2022",
+            "2021",
+            "2020",
+            "2019",
+            "2018",
+            "2017",
+            "2016",
+            "2015",
+            "2014",
+            "2013",
+            "2012",
+            "2011",
+            "2010"});
+            this.VYearCb.Location = new System.Drawing.Point(726, 110);
+            this.VYearCb.Name = "VYearCb";
+            this.VYearCb.Size = new System.Drawing.Size(113, 29);
+            this.VYearCb.TabIndex = 10;
             // 
             // dataGridView1
             // 
@@ -140,40 +241,41 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(113, 42);
             this.button3.TabIndex = 8;
-            this.button3.Text = "Fire";
+            this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // EditBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.Green;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.Gold;
-            this.button2.Location = new System.Drawing.Point(438, 240);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(113, 42);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Edit";
-            this.button2.UseVisualStyleBackColor = false;
+            this.EditBtn.BackColor = System.Drawing.Color.Green;
+            this.EditBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EditBtn.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.EditBtn.ForeColor = System.Drawing.Color.Gold;
+            this.EditBtn.Location = new System.Drawing.Point(438, 240);
+            this.EditBtn.Name = "EditBtn";
+            this.EditBtn.Size = new System.Drawing.Size(113, 42);
+            this.EditBtn.TabIndex = 7;
+            this.EditBtn.Text = "Edit";
+            this.EditBtn.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // SaveBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.LawnGreen;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Ravie", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(225, 239);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 42);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
+            this.SaveBtn.BackColor = System.Drawing.Color.LawnGreen;
+            this.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SaveBtn.Font = new System.Drawing.Font("Ravie", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.SaveBtn.Location = new System.Drawing.Point(225, 239);
+            this.SaveBtn.Name = "SaveBtn";
+            this.SaveBtn.Size = new System.Drawing.Size(113, 42);
+            this.SaveBtn.TabIndex = 6;
+            this.SaveBtn.Text = "Save";
+            this.SaveBtn.UseVisualStyleBackColor = false;
+            this.SaveBtn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // comboBox2
+            // TypeCb
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.TypeCb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.TypeCb.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.TypeCb.FormattingEnabled = true;
+            this.TypeCb.Items.AddRange(new object[] {
             "Freight",
             "Sprinter",
             "CargoVan",
@@ -181,28 +283,28 @@
             "Suv",
             "Sprinter",
             "Sedan"});
-            this.comboBox2.Location = new System.Drawing.Point(310, 181);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(178, 29);
-            this.comboBox2.TabIndex = 4;
-            this.comboBox2.Text = "Type";
+            this.TypeCb.Location = new System.Drawing.Point(310, 181);
+            this.TypeCb.Name = "TypeCb";
+            this.TypeCb.Size = new System.Drawing.Size(178, 29);
+            this.TypeCb.TabIndex = 4;
+            this.TypeCb.Text = "Type";
             // 
-            // comboBox1
+            // MakeCb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.MakeCb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MakeCb.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.MakeCb.FormattingEnabled = true;
+            this.MakeCb.Items.AddRange(new object[] {
             "Mercedes",
             "Toyota",
             "Audi",
             "Nissan",
             "Chevrolet"});
-            this.comboBox1.Location = new System.Drawing.Point(310, 110);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(178, 29);
-            this.comboBox1.TabIndex = 4;
-            this.comboBox1.Text = "Make";
+            this.MakeCb.Location = new System.Drawing.Point(310, 110);
+            this.MakeCb.Name = "MakeCb";
+            this.MakeCb.Size = new System.Drawing.Size(178, 29);
+            this.MakeCb.TabIndex = 4;
+            this.MakeCb.Text = "Make";
             // 
             // label11
             // 
@@ -248,21 +350,21 @@
             this.label9.TabIndex = 3;
             this.label9.Text = "Licence Plate";
             // 
-            // textBox2
+            // ModelTb
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(522, 110);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(178, 29);
-            this.textBox2.TabIndex = 2;
+            this.ModelTb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ModelTb.Location = new System.Drawing.Point(522, 110);
+            this.ModelTb.Name = "ModelTb";
+            this.ModelTb.Size = new System.Drawing.Size(178, 29);
+            this.ModelTb.TabIndex = 2;
             // 
-            // textBox1
+            // LPlateTb
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(96, 110);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(178, 29);
-            this.textBox1.TabIndex = 2;
+            this.LPlateTb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LPlateTb.Location = new System.Drawing.Point(96, 110);
+            this.LPlateTb.Name = "LPlateTb";
+            this.LPlateTb.Size = new System.Drawing.Size(178, 29);
+            this.LPlateTb.TabIndex = 2;
             // 
             // label7
             // 
@@ -271,9 +373,9 @@
             this.label7.ForeColor = System.Drawing.Color.DodgerBlue;
             this.label7.Location = new System.Drawing.Point(376, 18);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(203, 27);
+            this.label7.Size = new System.Drawing.Size(213, 27);
             this.label7.TabIndex = 1;
-            this.label7.Text = "Manage Drivers";
+            this.label7.Text = "Manage Vehicles";
             // 
             // label8
             // 
@@ -352,7 +454,6 @@
             // 
             // pictureBox10
             // 
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
             this.pictureBox10.Location = new System.Drawing.Point(76, 866);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(53, 52);
@@ -405,6 +506,7 @@
             // 
             // pictureBox6
             // 
+            this.pictureBox6.ErrorImage = null;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(63, 378);
             this.pictureBox6.Name = "pictureBox6";
@@ -517,107 +619,6 @@
             this.pictureBox9.TabStop = false;
             this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
-            // comboBox3
-            // 
-            this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox3.ForeColor = System.Drawing.Color.Black;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "2022",
-            "2021",
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010"});
-            this.comboBox3.Location = new System.Drawing.Point(726, 110);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(113, 29);
-            this.comboBox3.TabIndex = 10;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox4.ForeColor = System.Drawing.Color.Black;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "Diesel",
-            "Gasoline",
-            "Electric"});
-            this.comboBox4.Location = new System.Drawing.Point(854, 110);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(117, 29);
-            this.comboBox4.TabIndex = 11;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label1.Location = new System.Drawing.Point(854, 83);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 24);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Engine Type";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label20.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label20.Location = new System.Drawing.Point(756, 160);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(54, 24);
-            this.label20.TabIndex = 13;
-            this.label20.Text = "Color";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(756, 185);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(157, 29);
-            this.textBox3.TabIndex = 14;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label21.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label21.Location = new System.Drawing.Point(531, 160);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(77, 24);
-            this.label21.TabIndex = 15;
-            this.label21.Text = "Mileage";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(527, 185);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(163, 29);
-            this.textBox4.TabIndex = 16;
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox5.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            "Yes",
-            "No"});
-            this.comboBox5.Location = new System.Drawing.Point(96, 185);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(178, 29);
-            this.comboBox5.TabIndex = 17;
-            this.comboBox5.Text = "Type";
-            // 
             // Vehicles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -673,16 +674,16 @@
         private Panel panel3;
         private DataGridView dataGridView1;
         private Button button3;
-        private Button button2;
-        private Button button1;
-        private ComboBox comboBox2;
-        private ComboBox comboBox1;
+        private Button EditBtn;
+        private Button SaveBtn;
+        private ComboBox TypeCb;
+        private ComboBox MakeCb;
         private Label label11;
         private Label label13;
         private Label label10;
         private Label label9;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox ModelTb;
+        private TextBox LPlateTb;
         private Label label7;
         private Label label8;
         private Label label3;
@@ -706,13 +707,13 @@
         private Label label16;
         private Label label14;
         private PictureBox pictureBox9;
-        private ComboBox comboBox5;
-        private TextBox textBox4;
+        private ComboBox BookedCb;
+        private TextBox MileageTb;
         private Label label21;
-        private TextBox textBox3;
+        private TextBox ColorTb;
         private Label label20;
         private Label label1;
-        private ComboBox comboBox4;
-        private ComboBox comboBox3;
+        private ComboBox EngTypeCb;
+        private ComboBox VYearCb;
     }
 }
