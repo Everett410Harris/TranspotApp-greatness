@@ -37,8 +37,8 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.EngTypeCb = new System.Windows.Forms.ComboBox();
-            this.VYearCb = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.YearCb = new System.Windows.Forms.ComboBox();
+            this.VehicleDGV = new System.Windows.Forms.DataGridView();
             this.button3 = new System.Windows.Forms.Button();
             this.EditBtn = new System.Windows.Forms.Button();
             this.SaveBtn = new System.Windows.Forms.Button();
@@ -74,7 +74,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VehicleDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -97,8 +97,8 @@
             this.panel3.Controls.Add(this.label20);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.EngTypeCb);
-            this.panel3.Controls.Add(this.VYearCb);
-            this.panel3.Controls.Add(this.dataGridView1);
+            this.panel3.Controls.Add(this.YearCb);
+            this.panel3.Controls.Add(this.VehicleDGV);
             this.panel3.Controls.Add(this.button3);
             this.panel3.Controls.Add(this.EditBtn);
             this.panel3.Controls.Add(this.SaveBtn);
@@ -193,12 +193,12 @@
             this.EngTypeCb.Size = new System.Drawing.Size(117, 29);
             this.EngTypeCb.TabIndex = 11;
             // 
-            // VYearCb
+            // YearCb
             // 
-            this.VYearCb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.VYearCb.ForeColor = System.Drawing.Color.Black;
-            this.VYearCb.FormattingEnabled = true;
-            this.VYearCb.Items.AddRange(new object[] {
+            this.YearCb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.YearCb.ForeColor = System.Drawing.Color.Black;
+            this.YearCb.FormattingEnabled = true;
+            this.YearCb.Items.AddRange(new object[] {
             "2022",
             "2021",
             "2020",
@@ -212,24 +212,24 @@
             "2012",
             "2011",
             "2010"});
-            this.VYearCb.Location = new System.Drawing.Point(726, 110);
-            this.VYearCb.Name = "VYearCb";
-            this.VYearCb.Size = new System.Drawing.Size(113, 29);
-            this.VYearCb.TabIndex = 10;
+            this.YearCb.Location = new System.Drawing.Point(726, 110);
+            this.YearCb.Name = "YearCb";
+            this.YearCb.Size = new System.Drawing.Size(113, 29);
+            this.YearCb.TabIndex = 10;
             // 
-            // dataGridView1
+            // VehicleDGV
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 366);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(982, 518);
-            this.dataGridView1.TabIndex = 9;
+            this.VehicleDGV.AllowUserToAddRows = false;
+            this.VehicleDGV.AllowUserToDeleteRows = false;
+            this.VehicleDGV.BackgroundColor = System.Drawing.Color.White;
+            this.VehicleDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.VehicleDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.VehicleDGV.Location = new System.Drawing.Point(3, 366);
+            this.VehicleDGV.Name = "VehicleDGV";
+            this.VehicleDGV.ReadOnly = true;
+            this.VehicleDGV.RowTemplate.Height = 25;
+            this.VehicleDGV.Size = new System.Drawing.Size(982, 518);
+            this.VehicleDGV.TabIndex = 9;
             // 
             // button3
             // 
@@ -268,7 +268,6 @@
             this.SaveBtn.TabIndex = 6;
             this.SaveBtn.Text = "Save";
             this.SaveBtn.UseVisualStyleBackColor = false;
-            
             // 
             // TypeCb
             // 
@@ -652,7 +651,7 @@
             this.Load += new System.EventHandler(this.Vehicles_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VehicleDGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -672,7 +671,7 @@
         #endregion
 
         private Panel panel3;
-        private DataGridView dataGridView1;
+        private DataGridView VehicleDGV;
         private Button button3;
         private Button EditBtn;
         private Button SaveBtn;
@@ -714,6 +713,6 @@
         private Label label20;
         private Label label1;
         private ComboBox EngTypeCb;
-        private ComboBox VYearCb;
+        private ComboBox YearCb;
     }
 }
