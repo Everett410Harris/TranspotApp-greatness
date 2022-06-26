@@ -8,7 +8,7 @@ namespace TransportationApp
         {
             InitializeComponent();
         }
-        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C: \Users\Tech Louisville\Documents\transApp.mdf;Integrated Security=True;Connect Timeout=30 ");
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Tech Louisville\Documents\transApp.mdf;Integrated Security=True;Connect Timeout=30 ");
 
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
@@ -76,7 +76,7 @@ namespace TransportationApp
                 try
                 {
                     Con.Open();
-                    SqlCommand cmd = new SqlCommand("insert into VehicleTbl(VLp,VMake,VModel,VYear,VEngType,VColor,VMileage,VType,Booked) values(@VP,@VMa,@VMo,@VY,@VCo,@VMi,@VTy,@VB)", Con);
+                    SqlCommand cmd = new SqlCommand("insert into VehicleTbl (VLp,VMake,VModel,VYear,VEngType,VColor,VMileage,VType,Booked) values(@VP,@VMa,@VMo,@VY,@VCo,@VMi,@VTy,@VB)", Con);
                     cmd.Parameters.AddWithValue("@VP", LPlateTb.Text);
                     cmd.Parameters.AddWithValue("@VMa", MakeCb.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@VMo", ModelTb.Text);
