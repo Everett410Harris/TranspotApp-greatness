@@ -22,12 +22,12 @@ namespace TransportationApp
                 try
                 {
                     Con.Open();
-                    SqlCommand cmd = new SqlCommand("insert into VehicleTbl (VLp,VMake,VModel,VYear,VEngType,VColor,VMileage,VType,Booked) values(@VP,@VMa,@VMo,@VY,@VCo,@VMi,@VTy,@VB)", Con);
+                    SqlCommand cmd = new SqlCommand("insert into VehicleTbl (VLp,VMake,VModel,VYear,VEngType,VColor,VMileage,VType,Booked) values(@VP,@VMa,@VMo,@VY,@VEng,@VCo,@VMi,@VTy,@VB)", Con);
                     cmd.Parameters.AddWithValue("@VP", LPlateTb.Text);
                     cmd.Parameters.AddWithValue("@VMa", MakeCb.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@VMo", ModelTb.Text);
                     cmd.Parameters.AddWithValue("@VY", YearCb.SelectedItem.ToString());
-                    cmd.Parameters.AddWithValue("@VEngType", EngTypeCb.SelectedItem.ToString());
+                    cmd.Parameters.AddWithValue("@VEng", EngTypeCb.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@VCo", ColorTb.Text);
                     cmd.Parameters.AddWithValue("@VMi", MileageTb.Text);
                     cmd.Parameters.AddWithValue("@VTy", TypeCb.SelectedItem.ToString());
