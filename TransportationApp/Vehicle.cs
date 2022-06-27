@@ -48,10 +48,7 @@ namespace TransportationApp
                 {
                     MessageBox.Show(Ex.Message);
                 }
-                finally
-                {
-                    Con.Close();
-                }
+                
             }
         }
     }
