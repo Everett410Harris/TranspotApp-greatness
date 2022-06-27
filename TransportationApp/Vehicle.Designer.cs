@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vehicle));
             this.panel3 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.VehicleDGV = new System.Windows.Forms.DataGridView();
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.EditBtn = new System.Windows.Forms.Button();
             this.SaveBtn = new System.Windows.Forms.Button();
@@ -67,14 +67,14 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.VYearCb = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.BookedCb = new System.Windows.Forms.ComboBox();
             this.TypeCb = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.ColorTb = new System.Windows.Forms.TextBox();
             this.MileageTb = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VehicleDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel4.SuspendLayout();
@@ -95,9 +95,9 @@
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.TypeCb);
-            this.panel3.Controls.Add(this.comboBox1);
+            this.panel3.Controls.Add(this.BookedCb);
             this.panel3.Controls.Add(this.VYearCb);
-            this.panel3.Controls.Add(this.dataGridView1);
+            this.panel3.Controls.Add(this.VehicleDGV);
             this.panel3.Controls.Add(this.DeleteBtn);
             this.panel3.Controls.Add(this.EditBtn);
             this.panel3.Controls.Add(this.SaveBtn);
@@ -116,19 +116,19 @@
             this.panel3.Size = new System.Drawing.Size(988, 884);
             this.panel3.TabIndex = 1;
             // 
-            // dataGridView1
+            // VehicleDGV
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 366);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(982, 518);
-            this.dataGridView1.TabIndex = 9;
+            this.VehicleDGV.AllowUserToAddRows = false;
+            this.VehicleDGV.AllowUserToDeleteRows = false;
+            this.VehicleDGV.BackgroundColor = System.Drawing.Color.White;
+            this.VehicleDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.VehicleDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.VehicleDGV.Location = new System.Drawing.Point(3, 366);
+            this.VehicleDGV.Name = "VehicleDGV";
+            this.VehicleDGV.ReadOnly = true;
+            this.VehicleDGV.RowTemplate.Height = 25;
+            this.VehicleDGV.Size = new System.Drawing.Size(982, 518);
+            this.VehicleDGV.TabIndex = 9;
             // 
             // DeleteBtn
             // 
@@ -140,7 +140,7 @@
             this.DeleteBtn.Name = "DeleteBtn";
             this.DeleteBtn.Size = new System.Drawing.Size(113, 42);
             this.DeleteBtn.TabIndex = 8;
-            this.DeleteBtn.Text = "Fire";
+            this.DeleteBtn.Text = "Delete";
             this.DeleteBtn.UseVisualStyleBackColor = false;
             // 
             // EditBtn
@@ -167,6 +167,7 @@
             this.SaveBtn.TabIndex = 6;
             this.SaveBtn.Text = "Save";
             this.SaveBtn.UseVisualStyleBackColor = false;
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
             // EngTypeCb
             // 
@@ -538,19 +539,19 @@
             this.VYearCb.Size = new System.Drawing.Size(113, 29);
             this.VYearCb.TabIndex = 10;
             // 
-            // comboBox1
+            // BookedCb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.BookedCb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BookedCb.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.BookedCb.FormattingEnabled = true;
+            this.BookedCb.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.comboBox1.Location = new System.Drawing.Point(96, 184);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(178, 29);
-            this.comboBox1.TabIndex = 11;
-            this.comboBox1.Text = "Type";
+            this.BookedCb.Location = new System.Drawing.Point(96, 184);
+            this.BookedCb.Name = "BookedCb";
+            this.BookedCb.Size = new System.Drawing.Size(178, 29);
+            this.BookedCb.TabIndex = 11;
+            this.BookedCb.Text = "Type";
             // 
             // TypeCb
             // 
@@ -639,7 +640,7 @@
             this.Text = "Vehicle";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VehicleDGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panel4.ResumeLayout(false);
@@ -659,7 +660,7 @@
         #endregion
 
         private Panel panel3;
-        private DataGridView dataGridView1;
+        private DataGridView VehicleDGV;
         private Button DeleteBtn;
         private Button EditBtn;
         private Button SaveBtn;
@@ -701,6 +702,6 @@
         private Label label11;
         private Label label1;
         private ComboBox TypeCb;
-        private ComboBox comboBox1;
+        private ComboBox BookedCb;
     }
 }
