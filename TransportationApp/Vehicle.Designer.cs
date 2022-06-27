@@ -30,6 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vehicle));
             this.panel3 = new System.Windows.Forms.Panel();
+            this.MileageTb = new System.Windows.Forms.TextBox();
+            this.ColorTb = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TypeCb = new System.Windows.Forms.ComboBox();
+            this.BookedCb = new System.Windows.Forms.ComboBox();
+            this.VYearCb = new System.Windows.Forms.ComboBox();
             this.VehicleDGV = new System.Windows.Forms.DataGridView();
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.EditBtn = new System.Windows.Forms.Button();
@@ -66,13 +73,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.VYearCb = new System.Windows.Forms.ComboBox();
-            this.BookedCb = new System.Windows.Forms.ComboBox();
-            this.TypeCb = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.ColorTb = new System.Windows.Forms.TextBox();
-            this.MileageTb = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VehicleDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
@@ -115,6 +115,99 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(988, 884);
             this.panel3.TabIndex = 1;
+            // 
+            // MileageTb
+            // 
+            this.MileageTb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MileageTb.Location = new System.Drawing.Point(522, 184);
+            this.MileageTb.Name = "MileageTb";
+            this.MileageTb.Size = new System.Drawing.Size(178, 29);
+            this.MileageTb.TabIndex = 18;
+            // 
+            // ColorTb
+            // 
+            this.ColorTb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ColorTb.Location = new System.Drawing.Point(762, 184);
+            this.ColorTb.Name = "ColorTb";
+            this.ColorTb.Size = new System.Drawing.Size(178, 29);
+            this.ColorTb.TabIndex = 17;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label11.Location = new System.Drawing.Point(762, 157);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(54, 24);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "Color";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label1.Location = new System.Drawing.Point(522, 157);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 24);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Mileage";
+            // 
+            // TypeCb
+            // 
+            this.TypeCb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.TypeCb.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.TypeCb.FormattingEnabled = true;
+            this.TypeCb.Items.AddRange(new object[] {
+            "Freight",
+            "Van",
+            "Sprinter",
+            "Suv",
+            "Sedan"});
+            this.TypeCb.Location = new System.Drawing.Point(333, 184);
+            this.TypeCb.Name = "TypeCb";
+            this.TypeCb.Size = new System.Drawing.Size(156, 29);
+            this.TypeCb.TabIndex = 12;
+            this.TypeCb.Text = "Type";
+            // 
+            // BookedCb
+            // 
+            this.BookedCb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BookedCb.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.BookedCb.FormattingEnabled = true;
+            this.BookedCb.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.BookedCb.Location = new System.Drawing.Point(96, 184);
+            this.BookedCb.Name = "BookedCb";
+            this.BookedCb.Size = new System.Drawing.Size(178, 29);
+            this.BookedCb.TabIndex = 11;
+            this.BookedCb.Text = "Type";
+            // 
+            // VYearCb
+            // 
+            this.VYearCb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.VYearCb.ForeColor = System.Drawing.Color.Black;
+            this.VYearCb.FormattingEnabled = true;
+            this.VYearCb.Items.AddRange(new object[] {
+            "2022",
+            "2021",
+            "2020",
+            "2019",
+            "2018",
+            "2017",
+            "2016",
+            "2015",
+            "2014",
+            "2013",
+            "2012",
+            "2011",
+            "2010"});
+            this.VYearCb.Location = new System.Drawing.Point(726, 110);
+            this.VYearCb.Name = "VYearCb";
+            this.VYearCb.Size = new System.Drawing.Size(113, 29);
+            this.VYearCb.TabIndex = 10;
             // 
             // VehicleDGV
             // 
@@ -514,99 +607,6 @@
             this.label17.Size = new System.Drawing.Size(137, 37);
             this.label17.TabIndex = 28;
             this.label17.Text = "Excellent";
-            // 
-            // VYearCb
-            // 
-            this.VYearCb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.VYearCb.ForeColor = System.Drawing.Color.Black;
-            this.VYearCb.FormattingEnabled = true;
-            this.VYearCb.Items.AddRange(new object[] {
-            "2022",
-            "2021",
-            "2020",
-            "2019",
-            "2018",
-            "2017",
-            "2016",
-            "2015",
-            "2014",
-            "2013",
-            "2012",
-            "2011",
-            "2010"});
-            this.VYearCb.Location = new System.Drawing.Point(726, 110);
-            this.VYearCb.Name = "VYearCb";
-            this.VYearCb.Size = new System.Drawing.Size(113, 29);
-            this.VYearCb.TabIndex = 10;
-            // 
-            // BookedCb
-            // 
-            this.BookedCb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BookedCb.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.BookedCb.FormattingEnabled = true;
-            this.BookedCb.Items.AddRange(new object[] {
-            "Yes",
-            "No"});
-            this.BookedCb.Location = new System.Drawing.Point(96, 184);
-            this.BookedCb.Name = "BookedCb";
-            this.BookedCb.Size = new System.Drawing.Size(178, 29);
-            this.BookedCb.TabIndex = 11;
-            this.BookedCb.Text = "Type";
-            // 
-            // TypeCb
-            // 
-            this.TypeCb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TypeCb.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.TypeCb.FormattingEnabled = true;
-            this.TypeCb.Items.AddRange(new object[] {
-            "Freight",
-            "Van",
-            "Sprinter",
-            "Suv",
-            "Sedan"});
-            this.TypeCb.Location = new System.Drawing.Point(333, 184);
-            this.TypeCb.Name = "TypeCb";
-            this.TypeCb.Size = new System.Drawing.Size(156, 29);
-            this.TypeCb.TabIndex = 12;
-            this.TypeCb.Text = "Type";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label1.Location = new System.Drawing.Point(522, 157);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 24);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Mileage";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label11.Location = new System.Drawing.Point(762, 157);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(54, 24);
-            this.label11.TabIndex = 16;
-            this.label11.Text = "Color";
-            // 
-            // ColorTb
-            // 
-            this.ColorTb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ColorTb.Location = new System.Drawing.Point(762, 184);
-            this.ColorTb.Name = "ColorTb";
-            this.ColorTb.Size = new System.Drawing.Size(178, 29);
-            this.ColorTb.TabIndex = 17;
-            // 
-            // MileageTb
-            // 
-            this.MileageTb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MileageTb.Location = new System.Drawing.Point(522, 184);
-            this.MileageTb.Name = "MileageTb";
-            this.MileageTb.Size = new System.Drawing.Size(178, 29);
-            this.MileageTb.TabIndex = 18;
             // 
             // Vehicle
             // 
