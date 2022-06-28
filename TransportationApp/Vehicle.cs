@@ -16,8 +16,20 @@ namespace TransportationApp
         public Vehicle()
         {
             InitializeComponent();
+            ShowVehicle();
         }
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Tech Louisville\Documents\transApp.mdf;Integrated Security=True;Connect Timeout=30");
+        private void ShowVehicle()
+        {
+            Con.Open();
+            string Query = "select * from VehicleTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
+            SqlCommandBuilder Builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            VehicleDGV.DataSource = ds.Tables[0];
+            Con.Close();
+        }
         private void SaveBtn_Click(object sender, EventArgs e)
         {
             if(LPlateTb.Text == "" || MakeCb.SelectedIndex == -1 || ModelTb.Text == "" || VYearCb.SelectedIndex == -1 || EngTypeCb.SelectedIndex == -1 || ColorTb.Text == "" || MileageTb.Text == "" || TypeCb.SelectedIndex == -1 || BookedCb.SelectedIndex == -1)
@@ -43,6 +55,7 @@ namespace TransportationApp
                     MessageBox.Show("Vehicle Recorded");
 
                     Con.Close();
+                    ShowVehicle();
                 }
                 catch(Exception Ex)
                 {
@@ -50,6 +63,17 @@ namespace TransportationApp
                 }
                 
             }
+        }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VehicleDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            LPlateTb.Text = VehicleDGV.SelectedRows[0].Cells[1].ToString();
+            
         }
     }
 }
