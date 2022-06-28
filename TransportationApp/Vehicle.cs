@@ -67,13 +67,47 @@ namespace TransportationApp
 
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
+            if (LPlateTb.Text == "")
+            {
+                MessageBox.Show("Select a Vehicle");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    SqlCommand cmd = new SqlCommand("delete from VehicleTbl where VLP=@VPlate", Con);
+                    cmd.Parameters.AddWithValue("@VPlate", LPlateTb.Text);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Vehicle Deleted");
 
+                    Con.Close();
+                    ShowVehicle();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+
+            }
         }
 
         private void VehicleDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            LPlateTb.Text = VehicleDGV.SelectedRows[0].Cells[1].ToString();
-            
+            LPlateTb.Text = VehicleDGV.SelectedRows[0].Cells[1].Value.ToString();
+            MakeCb.SelectedItem = VehicleDGV.SelectedRows[0].Cells[2].Value.ToString();
+            ModelTb.Text = VehicleDGV.SelectedRows[0].Cells[3].Value.ToString();
+            VYearCb.SelectedItem = VehicleDGV.SelectedRows[0].Cells[4].Value.ToString();
+            EngTypeCb.SelectedItem = VehicleDGV.SelectedRows[0].Cells[5].Value.ToString();
+            ColorTb.Text = VehicleDGV.SelectedRows[0].Cells[6].Value.ToString();
+            MileageTb.Text = VehicleDGV.SelectedRows[0].Cells[7].Value.ToString();
+            TypeCb.SelectedItem = VehicleDGV.SelectedRows[0].Cells[8].Value.ToString();
+            BookedCb.SelectedItem = VehicleDGV.SelectedRows[0].Cells[9].Value.ToString();
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
