@@ -92,7 +92,7 @@ namespace TransportationApp
             }
         }
 
-        private void VehicleDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void VehicleDGV_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             LPlateTb.Text = VehicleDGV.SelectedRows[0].Cells[1].Value.ToString();
             MakeCb.SelectedItem = VehicleDGV.SelectedRows[0].Cells[2].Value.ToString();
