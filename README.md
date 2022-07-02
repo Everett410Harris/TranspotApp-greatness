@@ -14,10 +14,18 @@ This is a Windows Form Application. Allowing users to input various information 
 
 # Features
 
-- Techonolgy Catalog
-  - Create, read, update, and delete information entered
+- [ ] Save, edit, update and delete vehicle information
+- [ ] Save, edit, update and delete customer information
+- [ ] Save, edit, update and delete driver information
+- [ ] Save, edit, update and delete user information
+- [ ] Save, edit, update and delete booked vehicle information
+- [ ] User can navigate throughout forms to input data
+- [ ] All information saved to database viewable on form page
   
-# Milestones
- - Generate database
- - Creating CRUD Controllers
- - Creating CRUD views
+# TODO
+
+- [ ] Create a Windows Form App
+- [ ] Link form pages
+- [ ] Create Models for database
+- [ ] Scaffold DB and Controllers
+- [ ] Clean up design and layout of all forms
