@@ -242,7 +242,7 @@
             this.VehicleDGV.RowTemplate.Height = 25;
             this.VehicleDGV.Size = new System.Drawing.Size(988, 518);
             this.VehicleDGV.TabIndex = 9;
-            this.VehicleDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.VehicleDGV_CellContentClick);
+            this.VehicleDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.VehicleDGV_CellClick);
             // 
             // DeleteBtn
             // 
