@@ -144,5 +144,10 @@ namespace TransportationApp
 
             }
         }
+
+        private void Vehicle_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

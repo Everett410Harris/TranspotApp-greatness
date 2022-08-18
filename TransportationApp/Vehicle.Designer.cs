@@ -662,6 +662,7 @@
             this.Name = "Vehicle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vehicle";
+            this.Load += new System.EventHandler(this.Vehicle_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VehicleDGV)).EndInit();
