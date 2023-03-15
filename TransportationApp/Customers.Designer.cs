@@ -29,473 +29,472 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customers));
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            this.SuspendLayout();
+            panel3 = new Panel();
+            dataGridView1 = new DataGridView();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
+            label11 = new Label();
+            label10 = new Label();
+            textBox3 = new TextBox();
+            label9 = new Label();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
+            label7 = new Label();
+            pictureBox11 = new PictureBox();
+            label19 = new Label();
+            label18 = new Label();
+            label17 = new Label();
+            label15 = new Label();
+            label16 = new Label();
+            label14 = new Label();
+            pictureBox9 = new PictureBox();
+            label8 = new Label();
+            pictureBox4 = new PictureBox();
+            panel4 = new Panel();
+            label2 = new Label();
+            label6 = new Label();
+            pictureBox10 = new PictureBox();
+            pictureBox8 = new PictureBox();
+            label5 = new Label();
+            pictureBox7 = new PictureBox();
+            label4 = new Label();
+            pictureBox6 = new PictureBox();
+            label3 = new Label();
+            pictureBox5 = new PictureBox();
+            pictureBox12 = new PictureBox();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            SuspendLayout();
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.textBox1);
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Location = new System.Drawing.Point(203, 23);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(988, 941);
-            this.panel3.TabIndex = 1;
+            panel3.BackColor = Color.White;
+            panel3.Controls.Add(dataGridView1);
+            panel3.Controls.Add(button3);
+            panel3.Controls.Add(button2);
+            panel3.Controls.Add(button1);
+            panel3.Controls.Add(label11);
+            panel3.Controls.Add(label10);
+            panel3.Controls.Add(textBox3);
+            panel3.Controls.Add(label9);
+            panel3.Controls.Add(textBox2);
+            panel3.Controls.Add(textBox1);
+            panel3.Controls.Add(label7);
+            panel3.Location = new Point(203, 23);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(988, 941);
+            panel3.TabIndex = 1;
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 366);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(982, 572);
-            this.dataGridView1.TabIndex = 9;
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.BackgroundColor = Color.White;
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(3, 366);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(982, 572);
+            dataGridView1.TabIndex = 9;
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Red;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Snap ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.Color.Blue;
-            this.button3.Location = new System.Drawing.Point(587, 240);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(113, 42);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Fire";
-            this.button3.UseVisualStyleBackColor = false;
+            button3.BackColor = Color.Red;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Snap ITC", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.ForeColor = Color.Blue;
+            button3.Location = new Point(587, 240);
+            button3.Name = "button3";
+            button3.Size = new Size(113, 42);
+            button3.TabIndex = 8;
+            button3.Text = "Fire";
+            button3.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Green;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.Gold;
-            this.button2.Location = new System.Drawing.Point(376, 240);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(113, 42);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Edit";
-            this.button2.UseVisualStyleBackColor = false;
+            button2.BackColor = Color.Green;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Stencil", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.ForeColor = Color.Gold;
+            button2.Location = new Point(376, 240);
+            button2.Name = "button2";
+            button2.Size = new Size(113, 42);
+            button2.TabIndex = 7;
+            button2.Text = "Edit";
+            button2.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.LawnGreen;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Ravie", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(174, 240);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 42);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
+            button1.BackColor = Color.LawnGreen;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Ravie", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Location = new Point(174, 240);
+            button1.Name = "button1";
+            button1.Size = new Size(113, 42);
+            button1.TabIndex = 6;
+            button1.Text = "Save";
+            button1.UseVisualStyleBackColor = false;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label11.Location = new System.Drawing.Point(537, 83);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(163, 24);
-            this.label11.TabIndex = 3;
-            this.label11.Text = "Customer Address";
+            label11.AutoSize = true;
+            label11.Font = new Font("Franklin Gothic Demi", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.ForeColor = Color.OrangeRed;
+            label11.Location = new Point(537, 83);
+            label11.Name = "label11";
+            label11.Size = new Size(163, 24);
+            label11.TabIndex = 3;
+            label11.Text = "Customer Address";
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label10.Location = new System.Drawing.Point(311, 86);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(147, 24);
-            this.label10.TabIndex = 3;
-            this.label10.Text = "Customer Phone";
+            label10.AutoSize = true;
+            label10.Font = new Font("Franklin Gothic Demi", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label10.ForeColor = Color.OrangeRed;
+            label10.Location = new Point(311, 86);
+            label10.Name = "label10";
+            label10.Size = new Size(147, 24);
+            label10.TabIndex = 3;
+            label10.Text = "Customer Phone";
             // 
             // textBox3
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(537, 110);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(178, 100);
-            this.textBox3.TabIndex = 2;
+            textBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox3.Location = new Point(537, 113);
+            textBox3.Multiline = true;
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(178, 100);
+            textBox3.TabIndex = 2;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label9.Location = new System.Drawing.Point(96, 83);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(144, 24);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "Customer Name";
+            label9.AutoSize = true;
+            label9.Font = new Font("Franklin Gothic Demi", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.ForeColor = Color.OrangeRed;
+            label9.Location = new Point(96, 83);
+            label9.Name = "label9";
+            label9.Size = new Size(144, 24);
+            label9.TabIndex = 3;
+            label9.Text = "Customer Name";
             // 
             // textBox2
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(311, 113);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(178, 29);
-            this.textBox2.TabIndex = 2;
+            textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.Location = new Point(311, 113);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(178, 29);
+            textBox2.TabIndex = 2;
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(96, 110);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(178, 29);
-            this.textBox1.TabIndex = 2;
+            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Location = new Point(96, 110);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(178, 29);
+            textBox1.TabIndex = 2;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.label7.Location = new System.Drawing.Point(376, 18);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(239, 27);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Manage Customers";
+            label7.AutoSize = true;
+            label7.Font = new Font("Cooper Black", 18F, FontStyle.Italic, GraphicsUnit.Point);
+            label7.ForeColor = Color.LightSeaGreen;
+            label7.Location = new Point(376, 18);
+            label7.Name = "label7";
+            label7.Size = new Size(239, 27);
+            label7.TabIndex = 1;
+            label7.Text = "Manage Customers";
             // 
             // pictureBox11
             // 
-            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(1331, 16);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(52, 52);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 14;
-            this.pictureBox11.TabStop = false;
+            pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
+            pictureBox11.Location = new Point(1331, 16);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(52, 52);
+            pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox11.TabIndex = 14;
+            pictureBox11.TabStop = false;
             // 
             // label19
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Franklin Gothic Demi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label19.ForeColor = System.Drawing.Color.Magenta;
-            this.label19.Location = new System.Drawing.Point(1249, 159);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(99, 30);
-            this.label19.TabIndex = 20;
-            this.label19.Text = "Resume";
+            label19.AutoSize = true;
+            label19.Font = new Font("Franklin Gothic Demi", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label19.ForeColor = Color.Magenta;
+            label19.Location = new Point(1249, 159);
+            label19.Name = "label19";
+            label19.Size = new Size(99, 30);
+            label19.TabIndex = 20;
+            label19.Text = "Resume";
             // 
             // label18
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Franklin Gothic Demi", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label18.ForeColor = System.Drawing.Color.BlueViolet;
-            this.label18.Location = new System.Drawing.Point(1270, 494);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(34, 37);
-            this.label18.TabIndex = 17;
-            this.label18.Text = "5";
+            label18.AutoSize = true;
+            label18.Font = new Font("Franklin Gothic Demi", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label18.ForeColor = Color.BlueViolet;
+            label18.Location = new Point(1270, 494);
+            label18.Name = "label18";
+            label18.Size = new Size(34, 37);
+            label18.TabIndex = 17;
+            label18.Text = "5";
             // 
             // label17
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Franklin Gothic Demi", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label17.ForeColor = System.Drawing.Color.BlueViolet;
-            this.label17.Location = new System.Drawing.Point(1218, 531);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(137, 37);
-            this.label17.TabIndex = 18;
-            this.label17.Text = "Excellent";
+            label17.AutoSize = true;
+            label17.Font = new Font("Franklin Gothic Demi", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label17.ForeColor = Color.BlueViolet;
+            label17.Location = new Point(1218, 531);
+            label17.Name = "label17";
+            label17.Size = new Size(137, 37);
+            label17.TabIndex = 18;
+            label17.Text = "Excellent";
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Franklin Gothic Demi", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.ForeColor = System.Drawing.Color.BlueViolet;
-            this.label15.Location = new System.Drawing.Point(1249, 363);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(76, 37);
-            this.label15.TabIndex = 19;
-            this.label15.Text = "Num";
+            label15.AutoSize = true;
+            label15.Font = new Font("Franklin Gothic Demi", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label15.ForeColor = Color.BlueViolet;
+            label15.Location = new Point(1249, 363);
+            label15.Name = "label15";
+            label15.Size = new Size(76, 37);
+            label15.TabIndex = 19;
+            label15.Text = "Num";
             // 
             // label16
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Franklin Gothic Demi", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.ForeColor = System.Drawing.Color.Magenta;
-            this.label16.Location = new System.Drawing.Point(1249, 457);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(84, 37);
-            this.label16.TabIndex = 15;
-            this.label16.Text = "Stars";
+            label16.AutoSize = true;
+            label16.Font = new Font("Franklin Gothic Demi", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label16.ForeColor = Color.Magenta;
+            label16.Location = new Point(1249, 457);
+            label16.Name = "label16";
+            label16.Size = new Size(84, 37);
+            label16.TabIndex = 15;
+            label16.Text = "Stars";
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Franklin Gothic Demi", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.ForeColor = System.Drawing.Color.Magenta;
-            this.label14.Location = new System.Drawing.Point(1240, 297);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(138, 37);
-            this.label14.TabIndex = 16;
-            this.label14.Text = "Bookings";
+            label14.AutoSize = true;
+            label14.Font = new Font("Franklin Gothic Demi", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label14.ForeColor = Color.Magenta;
+            label14.Location = new Point(1240, 297);
+            label14.Name = "label14";
+            label14.Size = new Size(138, 37);
+            label14.TabIndex = 16;
+            label14.Text = "Bookings";
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(1218, 91);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(165, 163);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 13;
-            this.pictureBox9.TabStop = false;
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
+            pictureBox9.Location = new Point(1218, 91);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(165, 163);
+            pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox9.TabIndex = 13;
+            pictureBox9.TabStop = false;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.DimGray;
-            this.label8.Location = new System.Drawing.Point(62, 937);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(42, 24);
-            this.label8.TabIndex = 21;
-            this.label8.Text = "Exit";
+            label8.AutoSize = true;
+            label8.Font = new Font("Franklin Gothic Demi", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.ForeColor = Color.DimGray;
+            label8.Location = new Point(62, 937);
+            label8.Name = "label8";
+            label8.Size = new Size(42, 24);
+            label8.TabIndex = 21;
+            label8.Text = "Exit";
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(18, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(66, 52);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(18, 3);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(66, 52);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 1;
+            pictureBox4.TabStop = false;
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Location = new System.Drawing.Point(33, 106);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(100, 84);
-            this.panel4.TabIndex = 22;
+            panel4.BackColor = Color.White;
+            panel4.Controls.Add(label2);
+            panel4.Controls.Add(pictureBox4);
+            panel4.Location = new Point(33, 106);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(100, 84);
+            panel4.TabIndex = 22;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(18, 58);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 24);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Drivers";
+            label2.AutoSize = true;
+            label2.Font = new Font("Franklin Gothic Demi", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.DimGray;
+            label2.Location = new Point(18, 58);
+            label2.Name = "label2";
+            label2.Size = new Size(69, 24);
+            label2.TabIndex = 0;
+            label2.Text = "Drivers";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.DimGray;
-            this.label6.Location = new System.Drawing.Point(40, 606);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(98, 24);
-            this.label6.TabIndex = 23;
-            this.label6.Text = "Dashboard";
+            label6.AutoSize = true;
+            label6.Font = new Font("Franklin Gothic Demi", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.ForeColor = Color.DimGray;
+            label6.Location = new Point(40, 606);
+            label6.Name = "label6";
+            label6.Size = new Size(98, 24);
+            label6.TabIndex = 23;
+            label6.Text = "Dashboard";
             // 
             // pictureBox10
             // 
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(51, 881);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(53, 52);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 28;
-            this.pictureBox10.TabStop = false;
+            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
+            pictureBox10.Location = new Point(51, 881);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(53, 52);
+            pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox10.TabIndex = 28;
+            pictureBox10.TabStop = false;
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(51, 551);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(66, 52);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 29;
-            this.pictureBox8.TabStop = false;
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Location = new Point(51, 551);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(66, 52);
+            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox8.TabIndex = 29;
+            pictureBox8.TabStop = false;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(40, 487);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 24);
-            this.label5.TabIndex = 24;
-            this.label5.Text = "Bookings";
+            label5.AutoSize = true;
+            label5.Font = new Font("Franklin Gothic Demi", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = Color.DimGray;
+            label5.Location = new Point(40, 487);
+            label5.Name = "label5";
+            label5.Size = new Size(87, 24);
+            label5.TabIndex = 24;
+            label5.Text = "Bookings";
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(51, 432);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(66, 52);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 30;
-            this.pictureBox7.TabStop = false;
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(51, 432);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(66, 52);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 30;
+            pictureBox7.TabStop = false;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.DimGray;
-            this.label4.Location = new System.Drawing.Point(40, 379);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 24);
-            this.label4.TabIndex = 25;
-            this.label4.Text = "Vehicles";
+            label4.AutoSize = true;
+            label4.Font = new Font("Franklin Gothic Demi", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.DimGray;
+            label4.Location = new Point(40, 379);
+            label4.Name = "label4";
+            label4.Size = new Size(80, 24);
+            label4.TabIndex = 25;
+            label4.Text = "Vehicles";
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(51, 324);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(66, 52);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 31;
-            this.pictureBox6.TabStop = false;
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(51, 324);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(66, 52);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 31;
+            pictureBox6.TabStop = false;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label3.Location = new System.Drawing.Point(33, 282);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 24);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "Customers";
+            label3.AutoSize = true;
+            label3.Font = new Font("Franklin Gothic Demi", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.DodgerBlue;
+            label3.Location = new Point(33, 282);
+            label3.Name = "label3";
+            label3.Size = new Size(100, 24);
+            label3.TabIndex = 26;
+            label3.Text = "Customers";
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(51, 227);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(66, 52);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 32;
-            this.pictureBox5.TabStop = false;
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(51, 227);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(66, 52);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 32;
+            pictureBox5.TabStop = false;
             // 
             // pictureBox12
             // 
-            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(12, 23);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(52, 52);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 27;
-            this.pictureBox12.TabStop = false;
+            pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
+            pictureBox12.Location = new Point(12, 23);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(52, 52);
+            pictureBox12.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox12.TabIndex = 27;
+            pictureBox12.TabStop = false;
             // 
             // Customers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1410, 976);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox12);
-            this.Controls.Add(this.pictureBox11);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.panel3);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Customers";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Customers";
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1410, 976);
+            Controls.Add(label8);
+            Controls.Add(panel4);
+            Controls.Add(label6);
+            Controls.Add(pictureBox10);
+            Controls.Add(pictureBox8);
+            Controls.Add(label5);
+            Controls.Add(pictureBox7);
+            Controls.Add(label4);
+            Controls.Add(pictureBox6);
+            Controls.Add(label3);
+            Controls.Add(pictureBox5);
+            Controls.Add(pictureBox12);
+            Controls.Add(pictureBox11);
+            Controls.Add(label19);
+            Controls.Add(label18);
+            Controls.Add(label17);
+            Controls.Add(label15);
+            Controls.Add(label16);
+            Controls.Add(label14);
+            Controls.Add(pictureBox9);
+            Controls.Add(panel3);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "Customers";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Customers";
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

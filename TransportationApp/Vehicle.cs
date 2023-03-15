@@ -1,24 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Data;
 using System.Data.SqlClient;
 
 namespace TransportationApp
 {
     public partial class Vehicle : Form
     {
+        SqlConnection sqlConn = new SqlConnection();
         public Vehicle()
         {
             InitializeComponent();
             ShowVehicle();
         }
-        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Tech Louisville\Documents\transApp.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Coding Pics\repos\Transportation App\Transportation App\GridViewTutorial\MaterialGridView\MaterialGridView\transApp.mdf"";Integrated Security=True;Connect Timeout=30");
         private void ShowVehicle()
         {
             Con.Open();
