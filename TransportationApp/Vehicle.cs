@@ -11,7 +11,13 @@ namespace TransportationApp
             InitializeComponent();
             ShowVehicle();
         }
-        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Coding Pics\repos\Transportation App\Transportation App\GridViewTutorial\MaterialGridView\MaterialGridView\transApp.mdf"";Integrated Security=True;Connect Timeout=30");
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Coding Pics\repos\Transportation App\Transportation App\GridViewTutorial\MaterialGridView\MaterialGridView\transApp.mdf;Integrated Security=True;Connect Timeout=30");
+
+        public Vehicle(SqlConnection con)
+        {
+            Con = con;
+        }
+
         private void ShowVehicle()
         {
             Con.Open();
